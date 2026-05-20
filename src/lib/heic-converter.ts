@@ -1,5 +1,3 @@
-import heic2any from "heic2any";
-
 export type ConversionStatus = "pending" | "converting" | "completed" | "error";
 
 export interface ConversionJob {
@@ -11,6 +9,9 @@ export interface ConversionJob {
 }
 
 export async function convertHeicToJpg(file: File): Promise<string> {
+  // Dynamically import heic2any so it doesn't break Next.js SSR (which lacks 'window')
+  const heic2any = (await import("heic2any")).default;
+
   const convertedBlob = await heic2any({
     blob: file,
     toType: "image/jpeg",
