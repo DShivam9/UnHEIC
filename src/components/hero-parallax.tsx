@@ -8,11 +8,8 @@ export function HeroParallax({ scrollProgress }: { scrollProgress?: MotionValue<
   const progress = scrollProgress || dummyProgress;
   
   // Add physics-based smoothing for buttery scroll feel
-  const smoothProgress = useSpring(progress, {
-    stiffness: 40,
-    damping: 20,
-    mass: 0.8
-  });
+  // Removed useSpring because we are using Lenis for smooth scrolling! Double-springing causes severe lag and jitter.
+  const smoothProgress = progress;
 
   // --- GROUP 1 (Initial scroll: 0 to 0.3) ---
   const g1Opacity = useTransform(smoothProgress, [0, 0.15, 0.3, 1], [1, 1, 0, 0]);

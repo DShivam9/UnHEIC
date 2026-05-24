@@ -1,12 +1,8 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { WebglFluidAura } from "@/components/webgl-fluid-aura";
-
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-background text-foreground relative selection:bg-primary/20 selection:text-primary flex flex-col items-center justify-center text-center p-6">
-      <WebglFluidAura />
-      
       <div className="relative z-10 space-y-6">
         <h1 className="text-8xl md:text-9xl font-heading font-bold text-primary opacity-80 mix-blend-multiply">404</h1>
         <h2 className="text-2xl md:text-4xl font-heading font-medium tracking-tight">Page Not Found</h2>

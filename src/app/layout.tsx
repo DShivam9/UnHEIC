@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-import { ConsoleSilencer } from "@/components/console-silencer";
 import { SmoothScroll } from "@/components/smooth-scroll";
 
 export default function RootLayout({
@@ -53,7 +52,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ConsoleSilencer />
           <SmoothScroll>
             {children}
           </SmoothScroll>
