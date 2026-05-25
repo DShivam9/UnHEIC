@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const SITE_URL = "https://heicstudio.vercel.app";
+const SITE_URL = "https://heicstudio.space";
 const SITE_NAME = "HEIC Studio";
 const SITE_DESCRIPTION =
   "Convert HEIC to JPG, PNG, or WEBP instantly and privately — 100% in your browser. No uploads, no servers, no privacy risks. Free, fast, and secure iPhone photo converter powered by WebAssembly.";
@@ -245,7 +245,7 @@ function JsonLd() {
       {
         "@type": "HowToStep",
         name: "Open HEIC Studio",
-        text: "Visit heicstudio.vercel.app in any modern web browser.",
+        text: "Visit heicstudio.space in any modern web browser.",
         position: 1,
       },
       {

@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "apple photo to jpg",
   ],
   alternates: {
-    canonical: "https://heicstudio.vercel.app/convert/heic-to-jpg",
+    canonical: "https://heicstudio.space/convert/heic-to-jpg",
   },
   openGraph: {
     title: "HEIC to JPG Converter — Free & Private | HEIC Studio",
     description:
       "Convert iPhone HEIC photos to JPG instantly. No uploads, no servers — everything happens in your browser.",
-    url: "https://heicstudio.vercel.app/convert/heic-to-jpg",
+    url: "https://heicstudio.space/convert/heic-to-jpg",
     type: "website",
   },
 };

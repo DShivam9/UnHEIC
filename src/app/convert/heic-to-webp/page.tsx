@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "apple photo to webp",
   ],
   alternates: {
-    canonical: "https://heicstudio.vercel.app/convert/heic-to-webp",
+    canonical: "https://heicstudio.space/convert/heic-to-webp",
   },
   openGraph: {
     title: "HEIC to WEBP Converter — Free & Private | HEIC Studio",
     description:
       "Convert iPhone HEIC photos to WEBP instantly. No uploads, no servers — everything happens in your browser.",
-    url: "https://heicstudio.vercel.app/convert/heic-to-webp",
+    url: "https://heicstudio.space/convert/heic-to-webp",
     type: "website",
   },
 };
