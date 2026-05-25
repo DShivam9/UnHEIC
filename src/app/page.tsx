@@ -145,7 +145,11 @@ export default function Home() {
             <div className="container relative z-10 max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center mt-12 md:mt-20">
             
             <div className="max-w-4xl mx-auto pb-4">
-              <motion.h1 
+              {/* SEO Hidden H1 */}
+              <h1 className="sr-only">Free HEIC to JPG Converter (100% Private, No Upload)</h1>
+              
+              {/* Visual Hero Text */}
+              <motion.div 
                 initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
@@ -158,14 +162,14 @@ export default function Home() {
                     Unchained.
                   </span>
                 </span>
-              </motion.h1>
+              </motion.div>
               <motion.p 
                 initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
                 className="max-w-xl mx-auto text-muted-foreground text-base md:text-xl leading-relaxed font-sans font-light mb-8 md:mb-10"
               >
-                Transform your iPhone HEIC photos to JPG, PNG, or WEBP instantly. Zero server uploads. 100% uncompromising privacy.
+                Batch convert your iPhone HEIC photos to JPG, PNG, or WEBP instantly on Windows or Mac. Zero server uploads. 100% uncompromising privacy.
               </motion.p>
             </div>
 
@@ -216,7 +220,7 @@ export default function Home() {
                     {/* Subtle reveal gradient on hover */}
                     <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                     
-                    <feature.icon className="size-8 text-primary/60 group-hover:text-primary transition-colors duration-500 stroke-[1]" />
+                    <feature.icon role="img" aria-label={feature.title} className="size-8 text-primary/60 group-hover:text-primary transition-colors duration-500 stroke-[1]" />
                     <div className="space-y-4 transform transition-transform duration-500 group-hover:-translate-y-2">
                       <h4 className="text-2xl font-heading font-medium text-foreground">{feature.title}</h4>
                       <p className="text-sm font-sans font-light text-muted-foreground leading-relaxed">
@@ -282,7 +286,7 @@ export default function Home() {
                   >
                     <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full scale-150" />
                     <div className="relative p-5 rounded-2xl bg-foreground/5 border border-border/50 backdrop-blur-md shadow-xl">
-                      <Shield className="size-10 text-primary drop-shadow-[0_0_10px_rgba(var(--primary),0.3)]" strokeWidth={1} />
+                      <Shield role="img" aria-label="100% Private HEIC to JPG Conversion" className="size-10 text-primary drop-shadow-[0_0_10px_rgba(var(--primary),0.3)]" strokeWidth={1} />
                     </div>
                   </motion.div>
 

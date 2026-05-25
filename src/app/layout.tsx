@@ -28,41 +28,38 @@ const cormorant = Cormorant_Garamond({
 const SITE_URL = "https://heicstudio.space";
 const SITE_NAME = "HEIC Studio";
 const SITE_DESCRIPTION =
-  "Convert HEIC to JPG, PNG, or WEBP instantly and privately — 100% in your browser. No uploads, no servers, no privacy risks. Free, fast, and secure iPhone photo converter powered by WebAssembly.";
+  "Batch convert HEIC to JPG, PNG, or WEBP instantly on Windows and Mac. 100% in your browser, no uploads, no privacy risks. The best free, fast, secure iPhone photo converter.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   // ── Core ──
   title: {
-    default: "HEIC Studio — Free HEIC to JPG, PNG, WEBP Converter (100% Private, No Upload)",
+    default: "HEIC Studio — Free HEIC to JPG Converter (No Upload, 100% Private)",
     template: "%s | HEIC Studio",
   },
   description: SITE_DESCRIPTION,
   keywords: [
+    "batch convert heic to jpg",
+    "heic to jpg mac",
+    "heic to jpg windows",
+    "heic to jpg offline browser",
+    "convert heic without uploading",
+    "best free heic converter",
+    "heic to jpg fast",
     "heic to jpg",
-    "heic converter",
-    "heic to jpg converter",
-    "convert heic to jpg",
-    "heic to jpg online",
-    "heic to jpeg",
     "heic to png",
     "heic to webp",
-    "convert heic to png",
-    "convert heic to webp",
+    "convert heic to jpg",
+    "heic to jpg converter",
     "iphone photo converter",
     "apple heic converter",
-    "convert heic locally",
-    "heic converter no upload",
     "heic converter privacy",
-    "free heic converter",
-    "heic to jpg free",
-    "heic file converter",
-    "heic image converter",
-    "convert heic photos",
-    "browser heic converter",
-    "offline heic converter",
-    "heic webassembly converter",
+    "heic to jpg online free",
+    "convert heic locally",
+    "batch heic converter",
+    "heic to jpeg online",
+    "heic to jpg high quality",
     "heic studio",
   ],
   applicationName: SITE_NAME,
@@ -121,7 +118,7 @@ export const metadata: Metadata = {
 
   // ── Icons ──
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.svg",
     apple: "/apple-touch-icon.png",
   },
 
@@ -136,20 +133,20 @@ export const metadata: Metadata = {
 function JsonLd() {
   const webAppSchema = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
+    "@type": ["WebApplication", "SoftwareApplication"],
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
     applicationCategory: "UtilitiesApplication",
-    operatingSystem: "Any",
-    browserRequirements: "Requires a modern browser with WebAssembly support",
+    operatingSystem: "Windows, macOS, iOS, Android, Linux",
+    browserRequirements: "Requires a modern browser (Chrome, Safari, Firefox, Edge) with WebAssembly support",
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
     },
     featureList: [
-      "Convert HEIC to JPG, PNG, WEBP",
+      "Batch convert HEIC to JPG, PNG, WEBP",
       "100% client-side processing",
       "No file uploads to servers",
       "WebAssembly powered",
@@ -164,6 +161,31 @@ function JsonLd() {
       name: SITE_NAME,
       url: SITE_URL,
     },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Convert HEIC to JPG",
+        item: `${SITE_URL}/convert/heic-to-jpg`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Convert HEIC to PNG",
+        item: `${SITE_URL}/convert/heic-to-png`,
+      },
+    ],
   };
 
   const websiteSchema = {
@@ -272,6 +294,10 @@ function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"

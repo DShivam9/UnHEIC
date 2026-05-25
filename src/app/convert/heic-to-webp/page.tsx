@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "heic to webp free",
     "iphone heic to webp",
     "apple photo to webp",
+    "heic to webp mac",
+    "heic to webp windows",
+    "batch convert heic to webp",
   ],
   alternates: {
     canonical: "https://heicstudio.space/convert/heic-to-webp",

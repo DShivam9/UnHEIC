@@ -1,31 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#09090b" />
-      <stop offset="100%" stop-color="#000000" />
-    </linearGradient>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#ec4899"/></linearGradient>
-    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#f43f5e"/></linearGradient>
-    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f43f5e"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
-    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#10b981"/></linearGradient>
-    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient>
-  </defs>
+  <style>
+    /* Light Mode (Coffee on Warm Sand) */
+    .bg { fill: #f5f1ea; }
+    .stroke { stroke: #4e3b32; }
+    .sun { fill: #4e3b32; }
 
-  <rect width="256" height="256" rx="60" fill="url(#bg)" />
-  <rect width="252" height="252" x="2" y="2" rx="58" fill="none" stroke="#27272a" stroke-width="4" />
+    /* Dark Mode (Warm Gold on Deep Espresso) */
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #2b2725; }
+      .stroke { stroke: #ead6bf; }
+      .sun { fill: #ead6bf; }
+    }
+  </style>
+
+  <!-- Dynamic Background -->
+  <rect width="256" height="256" rx="56" class="bg" />
   
-  <g transform="translate(128, 128) scale(0.9)">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="15s" repeatCount="indefinite" />
+  <g fill="none" class="stroke" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Image Frame -->
+    <rect x="44" y="44" width="168" height="168" rx="24" />
     
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad1)" transform="rotate(0)" opacity="0.9" />
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad2)" transform="rotate(60)" opacity="0.9" />
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad3)" transform="rotate(120)" opacity="0.9" />
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad4)" transform="rotate(180)" opacity="0.9" />
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad5)" transform="rotate(240)" opacity="0.9" />
-    <path d="M 0,-85 L 45,-15 L -45,-15 Z" fill="url(#grad6)" transform="rotate(300)" opacity="0.9" />
+    <!-- Mountains -->
+    <path d="M 44 180 L 104 100 L 144 148 L 176 110 L 212 155" />
     
-    <circle cx="0" cy="0" r="28" fill="#09090b" />
-    <circle cx="0" cy="0" r="20" fill="none" stroke="url(#grad1)" stroke-width="4" />
+    <!-- Sun -->
+    <circle cx="156" cy="92" r="16" class="sun" stroke="none" />
   </g>
 </svg>

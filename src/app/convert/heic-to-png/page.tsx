@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "heic to png free",
     "iphone heic to png",
     "apple photo to png",
+    "heic to png mac",
+    "heic to png windows",
+    "batch convert heic to png",
   ],
   alternates: {
     canonical: "https://heicstudio.space/convert/heic-to-png",

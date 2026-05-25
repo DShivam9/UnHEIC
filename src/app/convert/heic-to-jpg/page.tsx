@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "heic to jpg free",
     "iphone heic to jpg",
     "apple photo to jpg",
+    "heic to jpg mac",
+    "heic to jpg windows",
+    "batch convert heic to jpg",
   ],
   alternates: {
     canonical: "https://heicstudio.space/convert/heic-to-jpg",
