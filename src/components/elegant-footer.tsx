@@ -72,11 +72,11 @@ export function ElegantFooter() {
   return (
     <footer 
       ref={containerRef}
-      className="relative overflow-hidden pt-32 pb-8 px-6 md:px-12 flex flex-col justify-between min-h-[70vh] bg-background text-foreground"
+      className="relative overflow-hidden pt-20 md:pt-32 pb-8 px-6 md:px-12 flex flex-col justify-between min-h-[70vh] bg-background text-foreground"
     >
       {/* Top Grid */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8 mb-32 z-10 relative">
-        <div className="space-y-8 max-w-md">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mb-20 md:mb-32 z-10 relative">
+        <div className="space-y-6 md:space-y-8 max-w-md">
           <h3 className="font-heading text-3xl md:text-4xl text-foreground leading-tight">
             The standard for secure<br/>image conversion.
           </h3>
@@ -101,7 +101,7 @@ export function ElegantFooter() {
           style={{ perspective: "1000px" }}
           className="w-full text-center relative group pb-4"
         >
-          <h2 className="text-[15vw] leading-none font-heading font-medium tracking-[-0.04em] cursor-default relative flex justify-center">
+          <h2 className="text-[20vw] md:text-[15vw] leading-none font-heading font-medium tracking-[-0.04em] cursor-default relative flex justify-center">
             {"HEIC Studio.".split("").map((char, i, arr) => (
               <ScrollLetter key={i} char={char} index={i} progress={scrollYProgress} total={arr.length} />
             ))}

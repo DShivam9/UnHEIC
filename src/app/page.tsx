@@ -142,14 +142,14 @@ export default function Home() {
               <HeroParallax scrollProgress={heroScrollYProgress} />
             </motion.div>
             
-            <div className="container relative z-10 max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center mt-20">
+            <div className="container relative z-10 max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center mt-12 md:mt-20">
             
             <div className="max-w-4xl mx-auto pb-4">
               <motion.h1 
                 initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                className="text-5xl md:text-6xl lg:text-[5.5rem] font-heading font-medium tracking-tight text-foreground leading-[1.1] mb-10 relative"
+                className="text-4xl md:text-6xl lg:text-[5.5rem] font-heading font-medium tracking-tight text-foreground leading-[1.1] mb-8 md:mb-10 relative"
               >
                 <span>Your Photos,{" "}</span>
                 <span className="alive-text-container italic font-light">
@@ -163,7 +163,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-                className="max-w-xl mx-auto text-muted-foreground text-lg md:text-xl leading-relaxed font-sans font-light mb-16"
+                className="max-w-xl mx-auto text-muted-foreground text-base md:text-xl leading-relaxed font-sans font-light mb-12 md:mb-16"
               >
                 Transform your iPhone HEIC photos to JPG instantly. Zero server uploads. 100% uncompromising privacy.
               </motion.p>
@@ -183,9 +183,9 @@ export default function Home() {
         </section>
 
         {/* Elegant Cards Section */}
-        <section id="approach" className="bg-background/40 backdrop-blur-sm relative z-10 py-32 scroll-mt-20 border-y border-border/20">
+        <section id="approach" className="bg-background/40 backdrop-blur-sm relative z-10 py-20 md:py-32 scroll-mt-20 border-y border-border/20">
           <div className="container mx-auto px-6 md:px-12 max-w-6xl">
-            <div className="text-center mb-20 space-y-4">
+            <div className="text-center mb-16 md:mb-20 space-y-4">
               <motion.h2 
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -194,7 +194,7 @@ export default function Home() {
               >
                 Our Approach
               </motion.h2>
-              <div className="font-heading text-4xl md:text-5xl flex justify-center">
+              <div className="font-heading text-3xl md:text-5xl flex justify-center px-4">
                 <LensBlurText text="The Standard for Privacy" />
               </div>
             </div>
@@ -231,8 +231,8 @@ export default function Home() {
         </section>
 
         {/* Privacy Deep Dive */}
-        <section id="privacy" className="py-32 container mx-auto px-6 md:px-12 max-w-5xl relative z-10 scroll-mt-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <section id="privacy" className="py-20 md:py-32 container mx-auto px-6 md:px-12 max-w-5xl relative z-10 scroll-mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             <motion.div 
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -241,8 +241,8 @@ export default function Home() {
               className="space-y-8"
             >
               <h2 className="font-sans text-sm tracking-[0.2em] uppercase text-primary">Our Guarantee</h2>
-              <h3 className="font-heading text-5xl leading-tight">Your Photos,<br/>Your Device.</h3>
-              <div className="space-y-6 text-muted-foreground font-sans font-light text-lg leading-relaxed">
+              <h3 className="font-heading text-4xl md:text-5xl leading-tight">Your Photos,<br/>Your Device.</h3>
+              <div className="space-y-6 text-muted-foreground font-sans font-light text-base md:text-lg leading-relaxed">
                 <p>
                   Absolute privacy is engineered into the core of HEIC Studio. We believe your personal memories should remain entirely under your control.
                 </p>
@@ -336,11 +336,11 @@ export default function Home() {
         </section>
 
         {/* Comprehensive FAQ */}
-        <section id="faq" className="py-32 relative z-10 scroll-mt-20">
+        <section id="faq" className="py-20 md:py-32 relative z-10 scroll-mt-20">
           <div className="container mx-auto px-6 md:px-12 max-w-3xl relative z-10">
-            <div className="text-center mb-16 space-y-4">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
               <h2 className="font-sans text-sm tracking-[0.2em] uppercase text-primary">Inquiries</h2>
-              <h3 className="font-heading text-5xl">Frequently Asked.</h3>
+              <h3 className="font-heading text-4xl md:text-5xl">Frequently Asked.</h3>
             </div>
 
             <div className="space-y-2">
