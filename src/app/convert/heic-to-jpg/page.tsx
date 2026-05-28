@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "batch convert heic to jpg",
   ],
   alternates: {
-    canonical: "https://heicstudio.space/convert/heic-to-jpg",
+    canonical: "https://www.heicstudio.space/convert/heic-to-jpg",
   },
   openGraph: {
     title: "HEIC to JPG Converter — Free & Private | HEIC Studio",
     description:
       "Convert iPhone HEIC photos to JPG instantly. No uploads, no servers — everything happens in your browser.",
-    url: "https://heicstudio.space/convert/heic-to-jpg",
+    url: "https://www.heicstudio.space/convert/heic-to-jpg",
     type: "website",
   },
 };

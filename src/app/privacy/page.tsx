@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Our privacy policy is simple: we don't collect, store, or process your data. HEIC Studio runs entirely on your local device.",
   alternates: {
-    canonical: "https://heicstudio.space/privacy",
+    canonical: "https://www.heicstudio.space/privacy",
   },
 };
 

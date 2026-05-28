@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "what is heic format",
   ],
   alternates: {
-    canonical: "https://heicstudio.space/learn-more",
+    canonical: "https://www.heicstudio.space/learn-more",
   },
   openGraph: {
     title: "How It Works — HEIC Studio",
     description:
       "Understand how HEIC Studio converts photos entirely in your browser with zero server uploads.",
-    url: "https://heicstudio.space/learn-more",
+    url: "https://www.heicstudio.space/learn-more",
     type: "article",
   },
 };

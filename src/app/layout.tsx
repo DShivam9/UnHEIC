@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const SITE_URL = "https://heicstudio.space";
+const SITE_URL = "https://www.heicstudio.space";
 const SITE_NAME = "HEIC Studio";
 const SITE_DESCRIPTION =
   "Batch convert HEIC to JPG, PNG, or WEBP instantly on Windows and Mac. 100% in your browser, no uploads, no privacy risks. The best free, fast, secure iPhone photo converter.";

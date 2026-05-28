@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Terms of Service for HEIC Studio, a free, client-side web application for converting image formats.",
   alternates: {
-    canonical: "https://heicstudio.space/terms",
+    canonical: "https://www.heicstudio.space/terms",
   },
 };
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://heicstudio.space/sitemap.xml",
+    sitemap: "https://www.heicstudio.space/sitemap.xml",
   };
 }
